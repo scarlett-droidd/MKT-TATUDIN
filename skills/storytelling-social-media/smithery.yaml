@@ -1,0 +1,112 @@
+name: storytelling-social-media
+version: "1.0.0"
+description: >
+  Experto en crear contenido viral con storytelling para redes sociales.
+  Usa fórmulas probadas (Así que–Para qué, Efecto Manzana, Método Hilos)
+  y hooks virales por plataforma para convertir ideas en contenido que conecta,
+  inspira y genera engagement en LinkedIn, TikTok, Instagram y Twitter/X.
+
+homepage: https://github.com/scarlett-droidd/MKT-TATUDIN
+license: MIT
+
+categories:
+  - content-creation
+  - marketing
+  - social-media
+  - writing
+
+tags:
+  - storytelling
+  - viral-content
+  - linkedin
+  - tiktok
+  - instagram
+  - twitter
+  - hooks
+  - copywriting
+  - social-media-marketing
+
+server:
+  type: stdio
+  command: node
+  args:
+    - dist/index.js
+  env:
+    ANTHROPIC_API_KEY:
+      required: true
+      description: "Tu API key de Anthropic (obtén una en console.anthropic.com)"
+
+tools:
+  - name: crear_contenido
+    description: >
+      Crea contenido viral completo (post, reel, carrusel, thread, historia)
+      usando fórmulas de storytelling y hooks virales adaptados a la plataforma.
+
+  - name: generar_hook
+    description: >
+      Genera hooks de apertura virales para captar atención en los primeros 3
+      segundos, adaptados al estilo de cada plataforma.
+
+  - name: analizar_contenido
+    description: >
+      Analiza contenido existente, diagnostica qué falla y entrega una versión
+      mejorada con fórmulas de storytelling aplicadas.
+
+setup:
+  instructions: |
+    ## Instalación
+
+    ### Opción 1: Smithery CLI (recomendado)
+    ```bash
+    npx @smithery/cli install storytelling-social-media --client claude
+    ```
+
+    ### Opción 2: Manual
+    1. Clona el repositorio:
+       ```bash
+       git clone https://github.com/scarlett-droidd/MKT-TATUDIN.git
+       cd MKT-TATUDIN/skills/storytelling-social-media
+       ```
+    2. Instala dependencias y compila:
+       ```bash
+       npm install
+       npm run build
+       ```
+    3. Agrega a tu `claude_desktop_config.json`:
+       ```json
+       {
+         "mcpServers": {
+           "storytelling-social-media": {
+             "command": "node",
+             "args": ["/ruta/a/MKT-TATUDIN/skills/storytelling-social-media/dist/index.js"],
+             "env": {
+               "ANTHROPIC_API_KEY": "tu-api-key-aquí"
+             }
+           }
+         }
+       }
+       ```
+    4. Reinicia Claude Desktop.
+
+examples:
+  - title: Crear un post de LinkedIn
+    prompt: |
+      crear_contenido con:
+      - idea: "Pasé 3 años construyendo mi agencia y casi la quiebro por no delegar"
+      - plataforma: LinkedIn
+      - formato: post
+      - formula: Efecto Manzana
+      - tono: personal
+
+  - title: Generar hooks para TikTok
+    prompt: |
+      generar_hook con:
+      - tema: "cómo triplicar ventas sin invertir en ads"
+      - plataforma: TikTok
+      - cantidad: 5
+
+  - title: Mejorar contenido existente
+    prompt: |
+      analizar_contenido con:
+      - contenido: "Hoy voy a hablar sobre productividad. Es importante ser productivo..."
+      - plataforma: LinkedIn

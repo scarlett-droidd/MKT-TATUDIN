@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "storytelling-social-media": {
+      "command": "node",
+      "args": ["/RUTA_ABSOLUTA/MKT-TATUDIN/skills/storytelling-social-media/dist/index.js"],
+      "env": {
+        "ANTHROPIC_API_KEY": "sk-ant-XXXXXXXXXX"
+      }
+    }
+  }
+}
