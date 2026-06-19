@@ -164,7 +164,8 @@ Responde directamente con el contenido, sin explicaciones previas.`;
     const response = await client.messages.create({
       model: "claude-opus-4-8",
       max_tokens: 1500,
-      thinking: { type: "adaptive" },
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      thinking: { type: "adaptive" } as any,
       messages: [{ role: "user", content: prompt }],
     });
 
@@ -241,7 +242,8 @@ Proporciona:
     const response = await client.messages.create({
       model: "claude-opus-4-8",
       max_tokens: 2000,
-      thinking: { type: "adaptive" },
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      thinking: { type: "adaptive" } as any,
       messages: [{ role: "user", content: prompt }],
     });
 
