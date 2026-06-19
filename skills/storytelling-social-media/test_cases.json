@@ -1,0 +1,79 @@
+[
+  {
+    "id": "test_1_linkedin_educativo",
+    "platform": "LinkedIn",
+    "input": "Idea plana: Los emprendedores no entienden por qué fracasan",
+    "expected_output_markers": [
+      "Hook claro en primeras líneas",
+      "Uso de fórmula Así que-Para qué o Efecto Manzana",
+      "Elemento de identificación personal",
+      "Revelación o insight práctico",
+      "CTA clara al final",
+      "Tono profesional pero cercano"
+    ]
+  },
+  {
+    "id": "test_2_tiktok_reel",
+    "platform": "TikTok/Reels",
+    "input": "Crear un Reel de 30 segundos sobre: La mayoría fracasa porque confunde urgente con importante",
+    "expected_output_markers": [
+      "Hook en primeros 2 segundos",
+      "Estructura rápida con giros",
+      "Incluye timing visual",
+      "Revelación o dato sorprendente",
+      "CTA clara para el final",
+      "Recomendaciones técnicas (velocidad, cortes)"
+    ]
+  },
+  {
+    "id": "test_3_carrusel_instagram",
+    "platform": "Instagram Carousel",
+    "input": "Convertir 'Cómo organicé mi semana y cambió mi productividad' en carrusel de 5 slides",
+    "expected_output_markers": [
+      "Slide 1: Hook + promesa clara",
+      "Slides intermedias: Máximo 2 líneas cada una",
+      "Progresión lógica entre slides",
+      "Slide final: Resumen + CTA",
+      "Uso de Efecto Manzana (cáscara-fruta-corazón)",
+      "Elemento emocional final"
+    ]
+  },
+  {
+    "id": "test_4_twitter_thread",
+    "platform": "Twitter/X",
+    "input": "Escribir un thread de 6 tweets sobre: 3 mentiras que te cuenta la industria del marketing",
+    "expected_output_markers": [
+      "Tweet inicial gancha atención",
+      "Cada tweet revela una mentira",
+      "Datos o experiencia personal",
+      "Ritmo acelerado de revelaciones",
+      "Tweet final: Conclusion + CTA",
+      "Tono provocador pero útil"
+    ]
+  },
+  {
+    "id": "test_5_caso_uso_coach",
+    "platform": "Mixed",
+    "input": "Soy coach y quiero crear contenido sobre: Por qué mis clientes no toman acción aunque sepan qué hacer",
+    "expected_output_markers": [
+      "Identificación con target audience",
+      "Uso de Método Hilos completo",
+      "Revelación del problema real",
+      "Solución práctica",
+      "Elemento de marca personal",
+      "Múltiples opciones de formato"
+    ]
+  },
+  {
+    "id": "test_6_debug_contenido",
+    "platform": "Diagnosis",
+    "input": "Mi contenido no tiene engagement. Post típico mío: 'La disciplina es clave para el éxito. Aquí están 5 tips para ser disciplinado.'",
+    "expected_output_markers": [
+      "Diagnóstico correcto: Hook débil, sin identificación, genérico",
+      "Reescritura aplicando fórmulas",
+      "Explicación de qué cambió y por qué",
+      "Comparativa antes/después",
+      "Ajustes específicos para viralidad"
+    ]
+  }
+]
