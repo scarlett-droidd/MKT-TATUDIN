@@ -1,6 +1,6 @@
 ---
 name: storytelling-social-media
-description: Experto en crear contenido viral con storytelling para redes sociales. Usa este skill cuando el usuario quiere crear posts, reels, threads, carruseles, o cualquier contenido para LinkedIn, TikTok, Instagram, Twitter/X, o otras plataformas. También usa cuando pide ayuda para hacer contenido más atractivo, emocional, o que genere engagement. Siempre aplica: fórmulas de storytelling (Así que-Para qué, Efecto Manzana, Método Hilos), hooks virales, y estructuras narrativas que conviertan datos planos en historias que conectan, inspiran y mueven a la acción.
+description: Experto en crear contenido viral con storytelling para redes sociales bajo la voz de marca Tatudin. Usa este skill cuando el usuario quiere crear posts, reels, threads, carruseles, o cualquier contenido para LinkedIn, TikTok, Instagram, Twitter/X, o otras plataformas. También usa cuando pide ayuda para hacer contenido más atractivo, emocional, o que genere engagement. Siempre aplica: fórmulas de storytelling (Así que-Para qué, Efecto Manzana, Método Hilos), hooks virales, estructuras narrativas que conviertan datos planos en historias que conectan, y la voz de marca Tatudin (arquetipo Cuidador + Compañero, tono colega, sin culpar al usuario, sin urgencia falsa).
 ---
 
 # Storytelling de Redes Sociales 🎬📱

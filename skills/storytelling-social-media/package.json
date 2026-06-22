@@ -1,0 +1,41 @@
+{
+  "name": "storytelling-social-media-mcp",
+  "version": "1.0.0",
+  "description": "MCP plugin para crear contenido viral con storytelling para redes sociales",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "storytelling-social-media": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "storytelling",
+    "social-media",
+    "content-creation",
+    "linkedin",
+    "tiktok",
+    "instagram",
+    "marketing"
+  ],
+  "author": "scarlett-droidd",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scarlett-droidd/MKT-TATUDIN.git"
+  }
+}
