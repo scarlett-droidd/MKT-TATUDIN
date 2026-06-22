@@ -12,6 +12,7 @@ import { dirname, join } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SKILL_MD = readFileSync(join(__dirname, "../SKILL.md"), "utf-8");
+const BRAND_MD = readFileSync(join(__dirname, "../BRAND.md"), "utf-8");
 
 const client = new Anthropic();
 
@@ -146,6 +147,12 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
 ---
 
+## Guía de Voz de Marca (aplicar siempre)
+
+${BRAND_MD}
+
+---
+
 El usuario quiere crear el siguiente contenido:
 - **Idea base:** ${idea}
 - **Plataforma:** ${plataforma}
@@ -153,10 +160,10 @@ El usuario quiere crear el siguiente contenido:
 - **Fórmula:** ${formula === "auto" ? "Elige la más adecuada según la idea y plataforma" : formula}
 - **Tono:** ${tono}
 
-Crea el contenido completo listo para publicar, incluyendo:
+Crea el contenido completo listo para publicar respetando la voz de marca Tatudin (Cuidador + Compañero, tono colega, sin urgencia falsa, sin culpar al usuario):
 1. Hook de apertura viral adaptado a ${plataforma}
 2. Cuerpo con la fórmula de storytelling elegida
-3. CTA (llamada a la acción) al final
+3. CTA de bajo compromiso al final
 4. Si aplica: hashtags relevantes (máximo 5)
 
 Responde directamente con el contenido, sin explicaciones previas.`;
@@ -227,14 +234,20 @@ Sin explicaciones adicionales.`;
 
 ---
 
-Analiza el siguiente contenido para ${plataforma} y mejóralo usando las fórmulas de storytelling:
+## Guía de Voz de Marca (aplicar siempre)
+
+${BRAND_MD}
+
+---
+
+Analiza el siguiente contenido para ${plataforma} y mejóralo usando las fórmulas de storytelling y la voz de marca Tatudin:
 
 ---CONTENIDO ORIGINAL---
 ${contenido}
 ---FIN CONTENIDO---
 
 Proporciona:
-1. **Diagnóstico rápido** (2-3 líneas): qué funciona y qué falla
+1. **Diagnóstico rápido** (2-3 líneas): qué funciona, qué falla y si respeta la voz de marca
 2. **Fórmula recomendada** y por qué
 3. **Versión mejorada** completa lista para publicar
 4. **Hook alternativo** más fuerte`;
